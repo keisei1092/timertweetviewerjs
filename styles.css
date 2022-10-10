@@ -1,0 +1,115 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+* {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-feature-settings: "palt";
+}
+
+.fav {
+  width: 32px;
+  height: 32px;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 24px 16px;
+
+  background-color: #fff;
+  color: #E5397F;
+
+  border-radius: 16px;
+  box-shadow: 0 2px 2px gray;
+
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toast {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-bottom: 24px;
+  background-color: #0008;
+  color: #FFF;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 0 2px 2px gray;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0.33;
+}
+
+body {
+  color: #ffffff;
+  background-color: #17202a88;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+
+.wrapper {
+  /* electronのウインドウのマージン？を考慮 */
+  width: calc(100vw - 32px - 16px);
+  /* 縦は、flexのgapもある */
+  height: calc(100vh - 48px - 16px - 32px);
+  margin: 24px 16px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.textWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.meta {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+}
+
+.name {
+  color: #4a99e9;
+  cursor: pointer;
+}
+
+.info {
+  cursor: pointer;
+  opacity: 0.66;
+  font-size: 14px;
+}
+
+.text {
+  font-family: sans-serif;
+}
+
+.imageWrapper {
+  width: 100%;
+  flex: 10;
+}
+
+.image {
+  width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  text-align: center;
+  object-fit: cover;
+  visibility: hidden;
+}

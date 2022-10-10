@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' https://pbs.twimg.com; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>timertweetviewerjs</title>
+  </head>
+  <body>
+    <!--
+    <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.
+    -->
+    <div class="fav">❤︎</div>
+    <div class="toast"></div>
+    <div class="wrapper">
+      <div class="textWrapper">
+        <div class="meta">
+          <div><img class="icon" src="" /></div>
+          <div class="name"></div>
+          <div class="info"></div>
+        </div>
+        <div class="content"><span class="text">loading...</span></div>
+      </div>
+      <div class="imageWrapper">
+        <img class="image" src="" />
+      </div>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
