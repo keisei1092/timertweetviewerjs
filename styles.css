@@ -113,3 +113,7 @@ body {
   object-fit: cover;
   visibility: hidden;
 }
+
+.image:hover {
+  object-fit: contain;
+}
